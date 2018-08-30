@@ -7,7 +7,7 @@ public class SimpleRouteBuilder extends RouteBuilder{
 	@Override
 	public void configure() throws Exception {
 		// TODO Auto-generated method stub
-		from("D:\\inputFolder\\twitter.txt").split().tokenize("\n").to("jms:queue:twitter");
+		from("file:/Users/Melina Carniel/Desktop/InputFolder").split().tokenize("\n").to("jms:queue:twitter");
 	}
 
 }

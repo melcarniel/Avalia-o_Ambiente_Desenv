@@ -29,7 +29,7 @@ public class Aplicacao {
 		List<Tweet> tweets = new ArrayList<Tweet>();
 
 		try {
-			FileWriter arq = new FileWriter("D:\\inputFolder\\twitter.txt");
+			FileWriter arq = new FileWriter("C:/Users/Melina Carniel/Desktop/InputFolder/twitter.txt");
 			PrintWriter gravarArq = new PrintWriter(arq);
 			
 			tweets = tweetBusiness.buscarTweets(twitter, "#java");
@@ -46,7 +46,7 @@ public class Aplicacao {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		/*
+		
 		SimpleRouteBuilder routeBuilder = new SimpleRouteBuilder();
 		CamelContext ctx = new DefaultCamelContext();
 		
@@ -63,7 +63,7 @@ public class Aplicacao {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		*/
+		
 	}
 
 }
